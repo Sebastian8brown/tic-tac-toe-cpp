@@ -1,8 +1,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 
 
 //Function prototypes 
@@ -16,9 +14,8 @@ int main()
 
 
 	//Title card 
-	cout << "TIC TAC TOE\n";
-	cout << "_____________________________________\n\n"; 
-
+	std::cout << "TIC TAC TOE" <<'\n';
+	std::cout << "_____________________________________"<< '\n'; 
 
 
 	//show start board
@@ -34,9 +31,7 @@ int main()
 	display(Array); 
 	
 
-
-
-
+	
 
 
 
@@ -51,10 +46,10 @@ void choice(char Array[][3])
 
 {
 
-	cout << "Player 1 pick: " << endl;
+	std::cout << "Player 1 pick: " << '\n';
 
 	char input1; 
-	cin >>   input1; //read position 
+	std::cin >>   input1; //read position 
 
 	
 	//search through the board 
@@ -86,10 +81,10 @@ void choice(char Array[][3])
 	display(Array);
 
 
-	cout << "Player 2 pick: " << endl;
+	std::cout << "Player 2 pick: " << '\n';
 
 	char input2;
-	cin >> input2;
+	std::cin >> input2;
 
 
 	//search through the board 
@@ -137,18 +132,17 @@ void display(char Array[][3])
 	for (int i = 0; i < 3; ++i)
 	{
 
-
 		for (int j = 0; j < 3; ++j)
 		{
-			cout << "|";
-			cout << Array[i][j]; 
+			std::cout << "|";
+			std::cout << Array[i][j]; 
 			
-			
-			cout << "|";
+		
+			std::cout << "|";
 
 		}
 		
-		cout << endl;
+		std::cout << '\n';
 
 	}
 
