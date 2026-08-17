@@ -1,8 +1,6 @@
 
 #include <iostream>
 
-
-
 //Function prototypes 
 void choice(char Array[][3]);
 void display( char Array[][3]);
@@ -45,6 +43,7 @@ int main()
 void choice(char Array[][3])
 
 {
+	int counter = 0;  
 
 	std::cout << "Player 1 pick: " << '\n';
 
@@ -121,6 +120,22 @@ void choice(char Array[][3])
 
 
 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void display(char Array[][3])
 {
@@ -150,3 +165,4 @@ void display(char Array[][3])
 
 	
 }
+
